@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+    <title>Mandatory-Uxdesign2</title>
+</head>
+
+<body>
+    <section id="main--section">
+        <header class="header--section">
+
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+            <h3>Mandatory-Uxdesign2</h3>
+        </header>
+
+        <div class="main--content">
+
+            <form id="questionForm">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="#" onclick="restartQuiz();closeNav()">Game Screen</a>
+                    <a href="#" onclick="quizStats();closeNav()">Stats</a>
+                    <a href="#" onclick="quizAbout();closeNav()">About</a>
+                </div>
+                <div id="show--data">
+                </div>
+            </form>
+            <button id="startButton" class="fade" onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </section>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button onclick="startQuiz()" class="closeModal" id="restartButton" type="button">Restart</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
